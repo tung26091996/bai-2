@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api_automation:
+    container_name: 'api_automation'
+    build:
+      context: ./automation
+    image: api_automation:latest
+    ports:
+      - "8003:8003"
+    networks: 
+      - db
+networks: 
+  db:              

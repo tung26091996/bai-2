@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo Microservice</title>
+</head>
+<body>
+<h1>Nginx làm API Gate (reverse proxy) cho các REST API phía sau</h1>
+
+<ul>
+  <li><a href="http://localhost">Trang chủ</a></li>
+  <li><a href="http://localhost/customer/list">localhost/customer/list</a> ==> <a href="http://localhost:8000/list">localhost:8000/list</a></li>
+  <li><a href="http://localhost/book/books">localhost/book/books</a> ==> <a href="http://localhost:8001/books">localhost:8001/books</a></li>
+  <li><a href="http://localhost/blog/posts">localhost/blog/posts</a> ==> <a href="http://localhost:8002/posts">localhost:8002/posts</a></li>
+  <li><a href="http://localhost/automation">localhost/automation</a> ==> <a href="http://localhost:8003/automation">localhost:8003/automation</a></li>
+</ul>
+</body>
+</html>
